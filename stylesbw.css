@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Gentium+Book+Basic&family=Rock+Salt&display=swap');
 
 * {
@@ -50,7 +49,7 @@ html, body {
     padding-bottom: 30px;
 }
 
-.band-name {
+.app-name {
     text-align: center;
     margin: 0;
     font-size: 2em;
@@ -59,7 +58,7 @@ html, body {
     color: white;
 }
 
-.band-name-large {
+.app-name-large {
     font-size: 7em;
 }
 
@@ -71,6 +70,7 @@ html, body {
     max-width: 900px;
     margin: 0 auto;
     padding: 0 1.5em;
+    align-items: center;
 }
 .section-header {
     font-family: 'Amatic SC', cursive;
@@ -119,12 +119,13 @@ html, body {
     vertical-align: middle;
     padding: .67em .67em;
     cursor: pointer;
+    align-items: center;
 }
 
 .btn-header {
     margin: .5em 15% 2em 15%;
     color: white;
-    border: 2px solid #2D9CDB;
+    border: 2px solid #8d9c48;
     background-color: rgba(255, 255, 255, .1);
     border-radius: 0;
     font-size: 1.5em;
