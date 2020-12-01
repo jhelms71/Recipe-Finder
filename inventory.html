@@ -1,84 +1,98 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Inventory</title>
-        <meta name="description" content="This is the description">
-        <link rel="stylesheet" href="stylesbw.css" />
-    </head>
-        <body>
-            <header class="main-header">
-                <nav class="main-nav nav">
-                    <ul>
-						<li><a href="homepage.html">HOME</a></li>
-						<li><a href="inventory.html">INVENTORY</a></li>
-						<li><a href="recipes.html">RECIPES</a></li>
-						<li><a href="about.html">ABOUT</a></li>
-                    </ul>
-                </nav>
-                
-                <h1 class="app-name app-name-large">Recipe Finder</h1>
-            </header>
-            <section class="container content-section">
-                <h2 class="section-header">Inventory</h2>
-                <div class="shop-items">
-                    <div class="shop-item">
-                        
-                        <span class="shop-item-title">Banana</span>
-                        
-                        <img class="shop-item-image" src="images/banana.jpeg">
-                        <div class="shop-item-details">
-                            <span class="shop-item-price"></span>
-                            <button class="shop-item-btn btn-primary" role="button">REMOVE</button>
-                        </div>
-                    </div>
-                    <div class="shop-item">
-                        
-                        <span class="shop-item-title">Cheese</span>
-                        
-                        <img class="shop-item-image" src="images/cheese.jpg">
-                        <div class="shop-item-details">
-                            <span class="shop-item-price"></span>
-                            <button class="shop-item-btn btn-primary" role="button">REMOVE</button>
-                        </div>
-                    </div>
-                    <div class="shop-item">
-                        
-                        <span class="shop-item-title">Onion</span>
-                        
-                        <img class="shop-item-image" src="images/onion.jpg">
-                        <div class="shop-item-details">
-                            <span class="shop-item-price"></span>
-                            <button class="shop-item-btn btn-primary" role="button">REMOVE</button>
-                        </div>
-                    </div>
-                    <div class="shop-item">
-                        
-                        <span class="shop-item-title">Milk</span>
-                        
-                        <img class="shop-item-image" src="images/milk.webp">
-                        <div class="shop-item-details">
-                            <span class="shop-item-price"> </span>
-                            <button class="btn-primary shop-item-btn" role="button">REMOVE</button>
-                        </div>
-                    </div>
-                </div>
-            </section>
-    
+<head>
+    <title>Inventory</title>
+    <meta name="description" content="This is the description">
+    <link rel="stylesheet" href="stylesbw.css" />
+    <script src="Inventory.js"></script>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-            <section class="container content-section">
-                
-                <button class="btn btn-primary btn-purchase" role="button"> ADD ITEMS</button>
-                
-            </section>
-    
-            <footer class="main-footer">
-                <div class="container main-footer-container">
-                    <h3 class="app-name">Recipe Finder</h3>
-                    <ul class="nav footer-nav">
-                        
-                    </ul>
-                </div>
-            </footer>
-    </body>
+</head>
+<body>
+<header class="main-header">
+    <nav class="main-nav nav">
+        <ul>
+            <li><a href="homepage.html">HOME</a></li>
+            <li><a href="inventory.html">INVENTORY</a></li>
+            <li><a href="recipes.html">RECIPES</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+        </ul>
+    </nav>
+
+    <h1 class="app-name app-name-large">Recipe Finder</h1>
+</header>
+<section class="container content-section">
+    <h2 class="section-header">Inventory</h2>
+    <div class="shop-item">
+
+        <span class="shop-item-title">Banana</span>
+
+        <img class="shop-item-image" src="images/banana.jpeg">
+        <div class="shop-item-details">
+            <span class="shop-item-price"></span>
+            <div class="qty mt-5">
+                <span class="minus bg-dark">-</span>
+                <input type="number" class="count" name="qty" value="1">
+                <span class="plus bg-dark">+</span>
+            </div>
+        </div>
+    </div>
+    <div class="shop-item">
+
+        <span class="shop-item-title">Cheese</span>
+
+        <img class="shop-item-image" src="images/cheese.jpg">
+        <div class="shop-item-details">
+            <span class="shop-item-price"></span>
+            <div class="qty mt-5">
+                <span class="minus bg-dark">-</span>
+                <input type="number" class="count" name="qty" value="1">
+                <span class="plus bg-dark">+</span>
+            </div>
+        </div>
+    </div>
+    <div class="shop-item">
+
+        <span class="shop-item-title">Onion</span>
+
+        <img class="shop-item-image" src="images/onion.jpg">
+        <div class="shop-item-details">
+            <span class="shop-item-price"></span>
+            <div class="qty mt-5">
+                <span class="minus bg-dark">-</span>
+                <input type="number" class="count" name="qty" value="1">
+                <span class="plus bg-dark">+</span>
+            </div>
+        </div>
+    </div>
+    <div class="shop-item">
+
+        <span class="shop-item-title">Milk</span>
+
+        <img class="shop-item-image" src="images/milk.webp">
+        <div class="shop-item-details">
+            <span class="shop-item-price"> </span>
+            <div class="qty mt-5">
+                <span class="minus bg-dark">-</span>
+                <input type="number" class="count" name="qty" value="1">
+                <span class="plus bg-dark">+</span>
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+
+
+<footer class="main-footer">
+    <div class="container main-footer-container">
+        <h3 class="app-name">Recipe Finder</h3>
+        <ul class="nav footer-nav">
+
+        </ul>
+    </div>
+</footer>
+</body>
 
 </html>
