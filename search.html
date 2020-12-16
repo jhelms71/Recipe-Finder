@@ -1,66 +1,39 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Inventory</title>
-    <meta name="description" content="This is the description">
-    <link rel="stylesheet" href="stylesbw.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <head>
+        <title>Search</title>
+        <meta name="description" content="This is the description">
+        <link rel="stylesheet" href="stylesbw.css">
+    </head>
+    <body>
+        <header class="main-header">
+            <nav class="nav main-nav">
+                <ul>
+                    <li><a href="homepage.html">HOME</a></li>
+                    <li><a href="inventory.html">INVENTORY</a></li>
+                    <li><a href="recipes.html">RECIPES</a></li>
+                    <li><a href="search.html">SEARCH</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                </ul>
+            </nav>
+            <h1 class="app-name app-name-large">Recipe Finder</h1>
+            <div class="container">
+                <button class="btn btn-header" onclick="someFunction()" type="button">Search</button>
+            </div>
+            
+        </header>
 
-</head>
-<body>
-<header class="main-header">
-    <nav class="main-nav nav">
-        <ul>
-            <li><a href="homepage.html">HOME</a></li>
-            <li><a href="inventory.html">INVENTORY</a></li>
-            <li><a href="recipes.html">RECIPES</a></li>
-            <li><a href="search.html">SEARCH</a></li>
-            <li><a href="about.html">ABOUT</a></li>
-        </ul>
-    </nav>
-
-    <h1 class="app-name app-name-large">Recipe Finder</h1>
-</header>
-
-input id="search"><button onclick="getrecipe(document.getElementById('search').value)">Search.</button>
-<div id="output"></div>
-<a href="" id="sourceLink"></a>
-
-<section class="recipe search">
-
-
-    <script>
-        function getsource(id){
-            $.ajax({
-                url"https://api.spoonacular.com/recipes/"+id+"/information?apiKey=816b7490a9msh55f1a514e4f522bp144df1jsnb810e8e980d1",
-                success: function(res){
-                    document.getElementById("sourceLink").innerHTML=res.sourceUrl
-                    document.getElementById("sourceLink").href=res.sourceUrl
-                }
-            });
-        }
-        function getrecipe(q){
-            $.ajax({
-                url:"https://api.spoonacular.com/recipes/search?apiKey=816b7490a9msh55f1a514e4f522bp144df1jsnb810e8e980d1&number=1&query="+q,
-                success: function(res){
-                    documents.getElementById("output").innerHTML="<h1>"+res.results[0].title+"</h1><br><img src='"+res.baseUri+res.results[0].image+"'width='400'/><br> ready in "+res.results.readyInMinutes+" minutes",
-                        getsource(res.results[0].id)
-                }
-            })
-        }
-
-    </script>
-
-</section>
-
-<footer class="main-footer">
-    <div class="container main-footer-container">
-        <h3 class="app-name">Recipe Finder</h3>
-        <ul class="nav footer-nav">
-
-        </ul>
-    </div>
-</footer>
-</body>
+    
+    <footer class="main-footer">
+        <div class="container main-footer-container">
+            <h3 class="app-name">Recipe Finder</h3>
+            <ul class="nav footer-nav">
+                
+            </ul>
+        </div>
+    </footer>
+   
+    
+    </body>
 
 </html>
